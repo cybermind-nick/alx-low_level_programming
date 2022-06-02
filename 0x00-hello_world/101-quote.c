@@ -6,7 +6,8 @@
  * Description: Program writes a
  * quote to the standard error buffer
  * Return: Returns a 1 (Error) 
- * */
+ *
+ */
 
 int main(void)
 {
