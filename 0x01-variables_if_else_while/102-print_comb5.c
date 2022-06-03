@@ -31,7 +31,7 @@ int main(void)
 					putchar(' ');
 					}
 				}
-				u = '0';
+				u = units;
 			}
 		}
 	}
