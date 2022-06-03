@@ -25,7 +25,7 @@ int main(void)
 					putchar(t);
 					putchar(u);
 
-					if (!((tens == '9' && units == '9') && (t == '9' && u == '9')))
+					if (!((tens == '9' && units == '8') && (t == '9' && u == '9')))
 					{
 					putchar(',');
 					putchar(' ');
