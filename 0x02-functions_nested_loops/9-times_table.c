@@ -16,21 +16,23 @@ void times_table(void)
 		{
 			int result = row * col;
 
-			if (result > 9)
-			{
-				_putchar('0' + (result / 10));
-				_putchar('0' + (result % 10));
-				_putchar(',');
-				_putchar(' ');
-			}
+			if (col == 0)
+				_putchar('0');
 			else
 			{
-				_putchar('0' + result);
-				_putchar(',');
-				_putchar(' ');
-				_putchar(' ');
+				putchar(',');
+				putchar(' ');
+				if (result < 9)
+				{
+					putchar(' ');
+					putchar('0' + result);
+				}
+				else
+				{
+					putchar('0' + (result / 10));
+					putchar('0' + (result % 10));
+				}
 			}
-		}
 		_putchar('\n');
 	}
 }
