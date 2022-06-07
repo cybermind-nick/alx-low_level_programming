@@ -51,4 +51,12 @@ int _isalpha(int c);
  */
 
 int print_sign(int n);
+
+/**
+ * _abs - returns the absolute value of a number
+ * @n: the number to be evaluated
+ * Return: n
+ */
+
+int _abs(int n);
 #endif
