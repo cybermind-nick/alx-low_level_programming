@@ -96,5 +96,5 @@ int add(int x, int y);
  * Return: void
  */
 
-void print_t0_98(int n);
+void print_to_98(int n);
 #endif
