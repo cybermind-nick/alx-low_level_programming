@@ -89,4 +89,12 @@ void times_table(void);
  */
 
 int add(int x, int y);
+
+/**
+ * print_to_98 - in ascending or descending order
+ *
+ * Return: void
+ */
+
+void print_t0_98(int n);
 #endif
