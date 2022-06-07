@@ -14,7 +14,7 @@ void times_table(void)
 	{
 		for (col = 0; col <= 9; col++)
 		{
-			int result = row * column;
+			int result = row * col;
 
 			if (result > 9)
 			{
