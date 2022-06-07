@@ -17,4 +17,13 @@ int _putchar(char c);
  */
 
 void print_alphabet(void);
+
+/**
+ * print_alphabet_x10 - call print_alpahet() 10 times
+ * input: void
+ *
+ * Return: void
+ */
+
+void print_alphabet_x10(void);
 #endif
