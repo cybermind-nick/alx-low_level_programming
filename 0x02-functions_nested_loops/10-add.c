@@ -2,7 +2,8 @@
 
 /**
  * add - function to add two integers
- *
+ * @x: first int
+ * @y: second int
  * Return: sum
  */
 
