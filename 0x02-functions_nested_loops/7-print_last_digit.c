@@ -9,7 +9,7 @@
 
 int print_last_digit(int n)
 {
-	int i = (n * -1) % 10; /* Get the last digit */
+	int i = n < 0 ? (n * -1) % 10: (n % 10); /* Get the last digit */
 	_putchar('0' + i); /* Print out the digit */
 	return (i);
 }
