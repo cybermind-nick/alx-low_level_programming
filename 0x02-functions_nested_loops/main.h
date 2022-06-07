@@ -59,4 +59,12 @@ int print_sign(int n);
  */
 
 int _abs(int n);
+
+/**
+ * print_last_digit - prints the last digit of a number
+ * @n: number to be evaluated
+ * Return: a where a is the last digit in n -> a * 10**0
+ */
+
+int print_last_digit(int n);
 #endif
