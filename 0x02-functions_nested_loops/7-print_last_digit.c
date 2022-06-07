@@ -9,7 +9,9 @@
 
 int print_last_digit(int n)
 {
-	int i = n < 0 ? (n * -1) % 10: (n % 10); /* Get the last digit */
+	int i = (n % 10); /* Get the last digit */
+
+	i = i < 0 ? i * -1 : i; /* if result is < 0, convert (for INT_MIN) */
 	_putchar('0' + i); /* Print out the digit */
 	return (i);
 }
