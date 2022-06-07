@@ -7,6 +7,6 @@
  * Return: void (ON Success)
  */
 
-void _putchar(char c)
+int _putchar(char c);
 
 #endif
