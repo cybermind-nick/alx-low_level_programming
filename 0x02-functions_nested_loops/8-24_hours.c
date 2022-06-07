@@ -16,14 +16,14 @@ void jack_bauer(void)
 		{
 			for (min_t = '0'; min_t <= '5'; min_t++)
 			{
-				for (min_u = '0'; min <= '9'; min_u++)
+				for (min_u = '0'; min_u <= '9'; min_u++)
 				{
-					putchar(hour_t);
-					putchar(hour_u);
-					putchar(':');
-					putchar(min_t);
-					putchar(min_u);
-					putchar('\n');
+					_putchar(hour_t);
+					_putchar(hour_u);
+					_putchar(':');
+					_putchar(min_t);
+					_putchar(min_u);
+					_putchar('\n');
 				}
 			}
 		}
