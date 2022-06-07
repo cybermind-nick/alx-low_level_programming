@@ -4,9 +4,17 @@
  * _putchar - it writes a character to STDOUT
  * @c - the character to be written
  *
- * Return: void (ON Success)
+ * Return: 1 (ON Success)
  */
 
 int _putchar(char c);
 
+/**
+ * print_alphabet - prints alphabet in lowercase
+ * input: void
+ *
+ * Return: void
+ */
+
+void print_alphabet(void);
 #endif
