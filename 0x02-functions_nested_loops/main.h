@@ -105,4 +105,28 @@ void print_to_98(int n);
  */
 
 void print_times_table(int n);
+
+/**
+ * put_unit - print_times_table helper function
+ * @n: result
+ * Return: void
+ */
+
+void put_unit(int n);
+
+/**
+ * print_tens - print_times_table helper function
+ * @n: result
+ * Return: void
+ */
+
+void put_tens(int n);
+
+/**
+ * put_hundred - print_times_table helper function
+ * @n: result
+ * Return: void
+ */
+
+void put_hundred(int n);
 #endif
