@@ -97,4 +97,12 @@ int add(int x, int y);
  */
 
 void print_to_98(int n);
+
+/**
+ * print_times_table - prints the n times table
+ *
+ * Return void
+ */
+
+void print_times_table(int n);
 #endif
