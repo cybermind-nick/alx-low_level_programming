@@ -18,13 +18,13 @@ void print_times_table(int n)
 		{
 			int result = row * col;
 
-			if (result == 0)
+			if (col == 0)
 				_putchar('0');
 
 			_putchar(',');
 			_putchar(' ');
 
-			else if (result < 10)
+			if (result < 10)
 			{
 				_putchar(' ');
 				_putchar('0' + result);
