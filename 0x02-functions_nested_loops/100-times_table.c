@@ -26,19 +26,61 @@ void print_times_table(int n)
 
 			_putchar(',');
 			_putchar(' ');
-			_putchar(' ');
 
 			if (result < 10)
 			{
-				_putchar(' ');
-				_putchar('0' + result);
+				_put_unit(result);
+			}
+			else if (result >= 10 && result < 100)
+			{
+				put_tens(result);
 			}
 			else
 			{
-				_putchar('0' + (result / 10));
-				_putchar('0' + (result % 10));
+				put_hundred(result);
 			}
 		}
 		_putchar('\n');
 	}
+}
+
+/**
+ * put_unit - prints out the unit digit
+ * @result: number to be printed
+ * Return: void
+ */
+
+void put_unit(int result)
+{
+	_putchar(' ');
+	_putchar(' ');
+	_putchar('0' + result);
+}
+
+/**
+ * put_tens - print out the tens digit
+ * @result: number to be printed
+ * Return: void
+ */
+
+void put_tens(int result)
+{
+	_putchar(' ');
+	_putchar('0' + (result / 10));
+	_putchar('0' + (result % 10));
+}
+
+/**
+ * put_hundred - print out the hundredth digits
+ * @result: number to be printed
+ * Return: void
+ */
+
+void put_hundred(int result)
+{
+	int h = (result / 100); /* get first digit */
+	int t = (result / 10) - (h * 10); /* get second digit */
+	_putchar('0' + h);
+	_putchar('0' + t);
+	_putchar('0' + (result % 10)); /* Last digit */
 }
