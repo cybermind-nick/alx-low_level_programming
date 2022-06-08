@@ -19,7 +19,10 @@ void print_times_table(int n)
 			int result = row * col;
 
 			if (col == 0)
+			{
 				_putchar('0');
+				continue;
+			}
 
 			_putchar(',');
 			_putchar(' ');
