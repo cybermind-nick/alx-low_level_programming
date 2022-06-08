@@ -80,6 +80,7 @@ void put_hundred(int result)
 {
 	int h = (result / 100); /* get first digit */
 	int t = (result / 10) - (h * 10); /* get second digit */
+
 	_putchar('0' + h);
 	_putchar('0' + t);
 	_putchar('0' + (result % 10)); /* Last digit */
