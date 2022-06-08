@@ -29,7 +29,7 @@ void print_times_table(int n)
 
 			if (result < 10)
 			{
-				_put_unit(result);
+				put_unit(result);
 			}
 			else if (result >= 10 && result < 100)
 			{
