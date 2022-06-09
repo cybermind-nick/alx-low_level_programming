@@ -1,5 +1,7 @@
 #include <stdio.h>
 
+void print_fibonacci(int n);
+
 /**
  * main - Program entry point
  * Description - Print the fibonacci sequence
