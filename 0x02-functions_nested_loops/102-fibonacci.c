@@ -10,7 +10,8 @@ void print_fibonacci(int n);
 
 int main(void)
 {
-	print_fibonacci(100);
+	printf("%d, %d, ", 1, 2);
+	print_fibonacci(48);
 	return (0);
 }
 
@@ -22,8 +23,8 @@ int main(void)
 
 void print_fibonacci(int n)
 {
-	static long first_no = 0;
-	static long second_no = 1;
+	static long first_no = 1;
+	static long second_no = 2;
 	static long next_fib;
 
 	if (n > 0)
