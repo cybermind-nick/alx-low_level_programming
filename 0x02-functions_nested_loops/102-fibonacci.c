@@ -13,7 +13,7 @@ int main(void)
 
 /**
  * print_fibonacci - Prints the n sequence of fibonacci numbers
- *
+ * @n: the number of terms of the fibonacci sequence to be printed
  * Return: void
  */
 
