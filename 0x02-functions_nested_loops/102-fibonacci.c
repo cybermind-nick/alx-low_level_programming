@@ -3,12 +3,13 @@
 /**
  * main - Program entry point
  * Description - Print the fibonacci sequence
- * Return: void
+ * Return: 0 (Success)
  */
 
 int main(void)
 {
 	print_fibonacci(100);
+	return(0);
 }
 
 /**
@@ -19,7 +20,8 @@ int main(void)
 
 void print_fibonacci(int n)
 {
-	static int first_no, second_no = 0, 1;
+	static int first_no = 0;
+	static int second_no = 1;
 	static int next_fib;
 
 	if (n > 0)
