@@ -35,6 +35,7 @@ int convert_day(int month, int day);
  * are left in the year, taking leap years into account
  * @month: Month in number format
  * @day: day of the month
+ * @year: year
  * Return: void
  */
 
