@@ -129,4 +129,12 @@ void put_tens(int n);
  */
 
 void put_hundred(int n);
+
+/**
+ * print_fibonacci - print n terms in fibonacci sequence
+ * @n: number of terms
+ * Return: void
+ */
+
+void print_fibonacci(int n);
 #endif
