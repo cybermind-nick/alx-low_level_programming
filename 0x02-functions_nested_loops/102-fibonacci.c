@@ -22,9 +22,9 @@ int main(void)
 
 void print_fibonacci(int n)
 {
-	static long long first_no = 0;
-	static long long second_no = 1;
-	static long long next_fib;
+	static long first_no = 0;
+	static long second_no = 1;
+	static long next_fib;
 
 	if (n > 0)
 	{
