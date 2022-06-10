@@ -8,25 +8,18 @@
 
 void print_triangle(int size)
 {
-	int pound, space, pp;
+	int pound, space, hash;
 
 	if (size > 0)
 	{
 		for (pound = 1; pound <= size; pound++)
 		{
-			space = size - pound;
-			pp = pound
-			while (space < size)
+			for (space = 1; space < (size - height); space++)
 			{
 				_putchar(' ');
-				space++;
 			}
-			while (pp > 0)
-			{
-				_putchar('#');
-				pp++;
-			}
-			_putchar('\n');
+			for (hash = 1; hash <= pound; hash++)
+				putchar('#');
 		}
 	}
 	else
