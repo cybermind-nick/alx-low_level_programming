@@ -2,7 +2,7 @@
 
 /**
  * print_line - print underscore n times
- *
+ * @n: number of lines to print
  * Return: void
  */
 
