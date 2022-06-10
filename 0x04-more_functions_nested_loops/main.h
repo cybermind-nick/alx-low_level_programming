@@ -9,4 +9,5 @@ int mul(int a, int b);
 
 void print_numbers(void);
 
+char _putchar(char c);
 #endif
