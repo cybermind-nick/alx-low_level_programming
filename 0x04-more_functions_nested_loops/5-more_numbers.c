@@ -1,25 +1,23 @@
 #include "main.h"
 
 /**
- * more_numbers - print up to 14
- *
- * Return: void
+ * more_numbers - print 0 to 14 ten times
  */
 
 void more_numbers(void)
 {
-	int i;
-	int row;
+	char i;
+	int counter;
 
-	for (row = 1; row <= 10; row++)
+	for (counter = 1; counter <= 10; counter++)/* to print 10 times*/
 	{
-		for (i = 0; i <= 14; i++)
+		for (i = 0; i <= 14; i++)/* to print from 0-14*/
 		{
-			if (i  >= 10)
+			if (i / 10 > 0)/* to get the first digit and check if > 0*/
 				_putchar((i / 10) + '0');
-			_putchar((i % 10) + '0');
+			_putchar((i % 10) + '0');/* to get the last digit*/
 		}
+		_putchar('\n');
 	}
-	_putchar('\n');
 
 }
