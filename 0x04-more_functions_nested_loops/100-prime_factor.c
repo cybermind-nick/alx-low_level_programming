@@ -24,6 +24,6 @@ int main(void)
 
 	printf("%lu\n", num); /* what is left in num is the largest factor */
 
-	return(0);
+	return (0);
 
 }
