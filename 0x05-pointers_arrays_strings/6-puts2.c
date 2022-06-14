@@ -14,6 +14,11 @@ void puts2(char *str)
 	{
 		_putchar(*(str + i));
 		i += 2;
+
+		if (*(str + (i - 1)) == '\0') /* Go back on char and check */
+		{
+			break;
+		}
 	}
 	_putchar('\n');
 }
