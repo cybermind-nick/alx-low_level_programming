@@ -9,8 +9,9 @@
 
 char *_strcat(char *dest, char *src)
 {
-	int i = 0, j = 0;
-
+	int i = 0;
+	int j = 0;
+	/* to count the str len without the null byte*/
 	while (dest[i] != '\0')
 	{
 		i++;
@@ -18,11 +19,11 @@ char *_strcat(char *dest, char *src)
 
 	while (src[j] != '\0')
 	{
+		/* appending src to the last index of dest */
 		dest[i] = src[j];
 		i++;
-		j++
+		j++;
 	}
-
 	dest[i] = '\0';
 
 	return (dest);
