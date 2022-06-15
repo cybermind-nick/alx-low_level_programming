@@ -1,27 +1,52 @@
 #include "main.h"
 
 /**
- * puts_half - prints half of a string
- * @str: input string
- * Return: void
+ * _strlen - returns the length of a string
+ * @s: string
+ * Return: length
+ */
+
+int _strlen(char *s)
+{
+	int len = 0;
+
+	while (*s != '\0')
+	{
+		len++;
+		s++;
+	}
+
+	return (len);
+}
+
+/**
+ * puts_half - prints half of a string, followed by a new line
+ * @str: string to print
+ *
+ * Description: If the number of characters is odd,
+ * the function should print the last n characters of the string
+ * where n = (length_of_the_string - 1) / 2
  */
 
 void puts_half(char *str)
 {
-	int len = 0;
-	int i;
+	int strAvg;
+	int len = _strlen(str);
 
-	while (*(str + len) != '\0')
+	/* find the index to start depending on even/odd amount of strlen */
+	if (len % 2 != 0)/* odd character*/
 	{
-		len++;
+		strAvg = (len / 2) + 1;
+	}
+	else
+	{
+		strAvg = (len / 2);
 	}
 
-	for (i = len / 2; i <= len; i++)
+	while (strAvg < len)
 	{
-		if (*(str + i) == '\0')
-			break;
-
-		_putchar(*(str + i));
+		_putchar(str[strAvg]);
+		strAvg++;
 	}
 	_putchar('\n');
 }
