@@ -11,17 +11,12 @@
 int _strcmp(char *s1, char *s2)
 {
 	int i;
-	int cmp = 0;
 
 	for (i = 0; s1[i] != '\0' || s2[i] != '\0'; i++)
 	{
-		if (s1[i] < s2[i])
-			cmp--;
-		else if (s1[i] > s2[i])
-			cmp++;
-		else
-			continue;
+		if (s1[i] != s2[i])
+			return s1[i] - s2[i];
 	}
 
-	return (cmp);
+	return (0);
 }
