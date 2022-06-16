@@ -11,15 +11,22 @@ char *cap_string(char *s)
 {
 	int i = 0;
 
-	while (s[i] != '\0')
+	/* check first index for capital */
+	if (s[i] >= 'a' && s[i] <= 'z')
+		s[i] -= 32;
+	i++;
+
+	while (s[i] != '\0') /* iterate through string */
 	{
-		if (s[i - 1] == '.')
-		{
-			if ((s[i] == '\n' || s[i] == ' ') && (s[i + 1] >= 'a' && s[i + 1] <= 'z'))
-				s[i + 1] -= 32;
-			else if (s[i] >= 'a' && s[i] <= 'z')
-				s[i] -= 32;
-		}
+
+		/* if lowercase and special char is separator, capitalize*/
+		if ((s[i] >= 'a' && s[i] <= 'z')
+		    && (s[i - 1] == ',' || s[i - 1] == ';' || s[i - 1] == '.' ||
+			s[i - 1] == '!' || s[i - 1] == '?' || s[i - 1] == '"' ||
+			s[i - 1] == '(' || s[i - 1] == ')' || s[i - 1] == '{' ||
+			s[i - 1] == '}' || s[i - 1] == ' ' || s[i - 1] == '\t'
+			|| s[i - 1] == '\n'))
+			s[i] -= 32;
 		i++;
 	}
 
