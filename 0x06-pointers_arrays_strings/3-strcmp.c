@@ -8,7 +8,7 @@
  * Return: int (numeric value of comparison)
  */
 
-int strcmp(char *s1, char *s2)
+int _strcmp(char *s1, char *s2)
 {
 	int i;
 	int cmp = 0;
