@@ -2,7 +2,7 @@
 
 /**
  * _memset - set bytes if a string in memory
- * ...to a constant byte 
+ * ...to a constant byte
  * @s: string in memory
  * @b: byte contant
  * @n: number of bytes in 's' to fill with the constant
