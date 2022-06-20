@@ -1,10 +1,12 @@
 #include "main.h"
 
 /**
- * memcpy - copy one string to another from memory
+ * _memcpy - copy one string to another from memory
  * @dest: location to be copied to
  * @src: location to be copied from
  * @n: number of bytes to be copied
+ *
+ * Return: char *dest - copied string
  */
 
 char *_memcpy(char *dest, char *src, unsigned int n)
