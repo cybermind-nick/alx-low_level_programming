@@ -11,14 +11,15 @@
 
 char *_memset(char *s, char b, unsigned int n)
 {
-	int bytes = n; /* Force bytes to be positive only */
+
+	int size = n;/* accept positive size only */
 	int i;
 
-	if (bytes > 0)
-		for (i = 0; s[i] != '\0' || i < n; i++)
-		{
+	if (size > 0)
+	{
+		for (i = 0; i < size; i++)
 			s[i] = b;
-		}
+	}
 
-		return (s)
+	return (s);
 }
