@@ -2,7 +2,7 @@
 #define NULL 0
 
 /**
- * strpbrk - return first occurence of accept and break
+ * _strpbrk - return first occurence of accept and break
  * @s: string to check
  * @accept: source string
  *
