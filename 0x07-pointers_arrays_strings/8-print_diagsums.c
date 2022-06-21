@@ -11,13 +11,14 @@
 
 void print_diagsums(int *a, int size)
 {
-	int row, col;
+	int row;
 	int left_diag = 0, right_diag = 0;
 
 	for (row = 0; row < size; row++)
 	{
-		left_diag += a[row][row]; /* go to row and column value at once - from the left  */
-		right_diag += a[row][size - 1 - row]; /* from the right inwards */
+		a = a+row;
+		left_diag += a[row]; /* go to row and column value at once - from the left  */
+		right_diag += a[size - 1 - row]; /* from the right inwards */
 	}
 
 	printf("%d, %d\n", left_diag, right_diag);
