@@ -20,7 +20,7 @@ char *_strpbrk(char *s, char *accept)
 			if (s[i] == accept[j])
 			{
 				s = &s[i]; /* set pointer (the string) to first occurence of target*/
-				return (&s[i]);
+				return (s);
 
 			}
 		}
