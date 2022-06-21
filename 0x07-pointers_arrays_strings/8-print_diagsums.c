@@ -8,15 +8,15 @@
  * Return: void
  */
 
-void print_diagsums(int *a, int n)
+void print_diagsums(int *a, int size)
 {
 	int row, col;
 	int left_diag = 0, right_diag = 0;
 
-	for (row = 0; row < n; row++)
+	for (row = 0; row < size; row++)
 	{
-		left_diag += a[row][row]; /* go to row and column value at once */
-		right_diag += a[row][n - 1 - row];
+		left_diag += a[row][row]; /* go to row and column value at once - from the left  */
+		right_diag += a[row][size - 1 - row]; /* from the right inwards */
 	}
 
 	printf("%d, %d\n", left_diag, right_diag);
