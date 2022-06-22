@@ -1,4 +1,5 @@
 #include "main.h"
+#include <unistd.h>
 
 /**
  * _puts_recursion - prints a string recursively
@@ -12,7 +13,7 @@ void _puts_recursion(char *s)
 	int i;
 	char nl = '\n';
 
-	for (i = 0; s[i] != '\0', i++)
+	for (i = 0; s[i] != '\0'; i++)
 	{
 		write(1, &s[i], 1);
 	}
