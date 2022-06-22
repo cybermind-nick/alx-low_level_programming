@@ -4,7 +4,7 @@
 /**
  * print_diagsums - print sums of diagonals of sqaure matrices
  * @a: the sqaure matrix
- * @n: size of the square matrix
+ * @size: size of the square matrix
  *
  * Return: void
  */
