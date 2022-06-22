@@ -11,15 +11,23 @@
 
 void print_diagsums(int *a, int size)
 {
-	int row;
-	int left_diag = 0, right_diag = 0;
+
+	int diagonal_1 = 0;
+	int diagonal_2 = 0;
+	int row, i;
 
 	for (row = 0; row < size; row++)
 	{
-		a = a+row;
-		left_diag += a[row]; /* go to row and column value at once - from the left  */
-		right_diag += a[size - 1 - row]; /* from the right inwards */
+		i = (row * size) + row;
+		diagonal_1 += a[i];
 	}
 
-	printf("%d, %d\n", left_diag, right_diag);
+	for (row = 1; row <= size; row++)
+	{
+		i = (row * size) - row;
+		diagonal_2 += a[i];
+	}
+
+	printf("%d, %d\n", diagonal_1, diagonal_2);
+
 }
