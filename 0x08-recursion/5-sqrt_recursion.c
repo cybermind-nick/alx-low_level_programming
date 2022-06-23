@@ -8,7 +8,7 @@
  * Return: int - root (if exits) else -1 or 0
  */
 
-int find_root(int n, root)
+int find_root(int n, int root)
 {
 	if (root * root > n)
 		return (-1);
@@ -20,13 +20,13 @@ int find_root(int n, root)
 }
 
 /**
- * _sqrt_recursively - calculate the natural root of a number recursively
+ * _sqrt_recursion - calculate the natural root of a number recursively
  * @n: the number to find the natural root of
  *
  * Return - int (root - it exist) or -1
  */
 
-int _sqrt_recursively(int n)
+int _sqrt_recursion(int n)
 {
 	if (n < 0)
 		return (-1);
