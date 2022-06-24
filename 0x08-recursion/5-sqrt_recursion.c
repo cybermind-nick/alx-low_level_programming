@@ -23,7 +23,7 @@ int find_root(int n, int root)
  * _sqrt_recursion - calculate the natural root of a number recursively
  * @n: the number to find the natural root of
  *
- * Return - int (root - it exist) or -1
+ * Return: int (root - it exist) or -1
  */
 
 int _sqrt_recursion(int n)
