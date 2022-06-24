@@ -9,7 +9,7 @@
  * @argc: argument count
  * @argv: argument value (strictly 1)
  *
- * Return (0) Success, (1) Failure
+ * Return: (0) Success, (1) Failure
  */
 
 int main(int argc, char **argv)
