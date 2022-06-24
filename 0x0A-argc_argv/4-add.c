@@ -2,6 +2,27 @@
 #include <stdlib.h>
 
 /**
+ * is_num - checks if a string is numerical
+ * @s: string
+ *
+ * Return: int (1) true, (0) false
+ */
+
+int is_num(char *s)
+{
+	int i;
+
+	for (i = 0; s[i] != '\0'; i++)
+	{
+		if (!(s[i] >= '0' && s[i] <= '9'))
+
+			return (0);
+	}
+
+	return (1);
+}
+
+/**
  * main - Program entry point
  * Description: add all numbers passed as cli args (to infintity)
  *
@@ -20,14 +41,17 @@ int main(int argc, char **argv)
 
 		for (i = 1; i < argc; i++)
 		{
-			val = atoi(argv[i]);
-			if (val == 0)
+			if (is_num(argv[i]))
+			{
+				val = atoi(argv[i]);
+				sum += val;
+			}
+			else
 			{
 				printf("Error\n");
 
 				return (1);
 			}
-			sum += val;
 		}
 
 		printf("%d\n", sum);
