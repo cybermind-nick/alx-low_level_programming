@@ -10,8 +10,9 @@
  * Return: (0)
  */
 
-int main(int argc, int *argv[])
+int main(int argc, char *argv[])
 {
+	(void)(*argv); /* Handle the unused parameter error by voiding argv */
 	if (argc > 0)
 		printf("%d\n", argc - 1);
 	else
