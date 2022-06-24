@@ -8,7 +8,7 @@
  * Return: (1) if palindrome, else return (0)
  */
 
-int compare_string(char *head, *tail)
+int compare_string(char *head, char *tail)
 {
 	if (head >= tail) /* this is position compared here, not actual value */
 		return (1);
