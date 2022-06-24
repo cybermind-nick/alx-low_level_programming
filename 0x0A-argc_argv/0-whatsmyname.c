@@ -2,9 +2,8 @@
 
 /**
  * main - program entry point
- * Description: prints the name of the program to STDOUT
- * argc: argument counter
- * argv: argument value
+ * @argc: argument counter
+ * @argv: argument value
  *
  * Return: (0) Success
  */
