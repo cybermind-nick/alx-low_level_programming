@@ -24,7 +24,7 @@ char *_strdup(char *str)
 
 	/* allocate memory */
 
-	str_ptr = (char *)(malloc(sizeof(char) * size));
+	str_ptr = (char *)((malloc(sizeof(char) * size)) + 1);
 
 	if (str_ptr == NULL)
 		return (NULL);
