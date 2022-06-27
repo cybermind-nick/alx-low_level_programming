@@ -19,7 +19,7 @@ char *_strdup(char *str)
 		return (NULL);
 
 	/* Get the size of the string */
-	while (str[size] != '\0')
+	while (str[size] != 0) /* Get to the very end + the '\0' char */
 		size++;
 
 	/* allocate memory */
