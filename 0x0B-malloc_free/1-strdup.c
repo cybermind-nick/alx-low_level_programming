@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * _strdup - returns a pointer to an allocated address with a copy of the string
+ * _strdup - return a pointer to an allocated address with a copy of the string
  * @str: string to write to allocate memory address
  *
  * Return: pointer to string
