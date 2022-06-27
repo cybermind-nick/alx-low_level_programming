@@ -11,9 +11,8 @@
 
 char *str_concat(char *s1, char *s2)
 {
-	char *new_str;
-	int s1_size, s2_size = 0;
-	int i = 0;
+	char *concat;
+	int len1 = 0, len2 = 0, i = 0, j = 0;
 
 	if (s1 == NULL)
 		s1 = "";
@@ -21,30 +20,30 @@ char *str_concat(char *s1, char *s2)
 	if (s2 == NULL)
 		s2 = "";
 
-	while (s1[s1_size] != 0)
-		s1_size++;
+	while (*(s1 + i))
+		len1++, i++;
 
-	while (s2[s2_size] != 0)
-		s2_size++;
+	while (*(s2 + j))
+		len2++, j++;
+	len2++; /* account for null terminator to the length */
 
-	new_str = (char *)(malloc((sizeof(char) * (s1_size + s2_size)) + 1));
+	concat = malloc(sizeof(char) * (len1 + len2)); /*alloc dynamic memory*/
 
-	if (new_str == NULL)
+	if (concat == NULL) /* validate memory */
 		return (NULL);
 
-	while (s1[i] != '\0')
+	i = 0, j = 0;
+	while (i < len1) /* concatenate */
 	{
-		new_str[i] = s1[i];
+		*(concat + i) = *(s1 + i);
 		i++;
 	}
 
-	i = 0;
-
-	while (s2[i] != '\0')
+	while (j < len2)
 	{
-		new_str[s1_size + i] = s2[i];
-		i++;
+		*(concat + i) = *(s2 + j); /* start from ending of i*/
+		i++, j++;
 	}
 
-	return (new_str);
+	return (concat);
 }
