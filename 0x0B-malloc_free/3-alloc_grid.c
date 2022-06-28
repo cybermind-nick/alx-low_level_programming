@@ -3,8 +3,8 @@
 
 /**
  * alloc_grid - allocate memory to a 2-dim array
- * @width - columns - inner array
- * @heigth: rows - outer (master) array
+ * @width: columns - inner array
+ * @height: rows - outer (master) array
  *
  * Return: 2-dim int array
  */
