@@ -22,7 +22,6 @@ int _strlen(char *s)
  * argstostr - concatenates all the arguments of your program
  * @ac: argc
  * @av: arguments
- *
  * Return: pointer to array
  */
 
