@@ -19,7 +19,7 @@ char **strtow(char *str)
 	word_track = NULL;
 	word_track = word_store;
 
-	if (str == NULL || *str == "")
+	if (str == NULL || *str == '\0')
 		return (NULL);
 
 	/* Get the number of rows */
@@ -41,9 +41,9 @@ char **strtow(char *str)
 
 		if (str[i] == ' ' && str[i] != '\0')
 		{
-			words[i] = *word_track; /* POint to the start of word_store */
-			*word_track = NULL;
-			*word_track = word_store; /* Set to new word_store location */
+			words[i] = word_track; /* POint to the start of word_store */
+			word_track = NULL;
+			word_track = word_store; /* Set to new word_store location */
 		}
 		i++;
 	}
