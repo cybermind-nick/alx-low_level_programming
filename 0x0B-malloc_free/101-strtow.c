@@ -15,9 +15,11 @@ char **strtow(char *str)
 	char **word_track; /* To hold the starting address of word store */
 	int i, j, size = 0;
 
+	word_store = NULL; /* Initialize to NULL */
+
 	*word_track = word_store;
 
-	if (str == NULL || str == ' ')
+	if (str == NULL || str == "")
 		return (NULL);
 
 	/* Get the number of rows */
