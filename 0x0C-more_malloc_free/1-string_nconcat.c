@@ -10,7 +10,7 @@
 
 int _strlen(char *str)
 {
-	int count;
+	int count = 0;
 
 	while (str[count] != '\0')
 		count++;
@@ -39,7 +39,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	concat = (char *)malloc((i + n) + 1);
 	if (concat == NULL)
-		return(NULL);
+		return (NULL);
 
 	for (i = 0; i < s1_len; i++)
 		concat[i] = s1[i];
