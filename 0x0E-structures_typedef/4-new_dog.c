@@ -19,9 +19,9 @@ dog_t *new_dog(char *name, float age, char *owner)
 	if (d == NULL)
 		return (NULL);
 
-	name == NULL ? d->name = "(nil)" : d->name = name;
+	d->name = name == NULL ? "(nil)" : name;
 	d->age = age;
-	owner == NULL ? d->owner = "(nil)" : d->owner = owner;
+	d->owner = owner == NULL ? "(nil)" : owner;
 
 	return (d);
 }
