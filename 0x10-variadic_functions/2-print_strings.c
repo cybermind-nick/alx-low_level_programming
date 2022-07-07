@@ -4,7 +4,7 @@
 
 /**
  * print_strings - print many strings
- * @seperator: string to seperate words by
+ * @separator: string to seperate words by
  * @n: number of args
  *
  * Return: void
