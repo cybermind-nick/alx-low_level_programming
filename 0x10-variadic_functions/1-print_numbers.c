@@ -33,6 +33,8 @@ void print_numbers(const char *seperator, const unsigned int n, ...)
 		for (i = 0; i < n; i++)
 		{
 			printf("%d", va_arg(args, int));
+			if ((i + 1) == n)
+				continue;
 			printf("%s", seperator);
 		}
 		printf("\n");
