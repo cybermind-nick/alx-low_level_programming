@@ -4,7 +4,7 @@
 
 /**
  * print_numbers - print a varible list of numbers entered
- * @seperator: string to be printed after each number
+ * @separator: string to be printed after each number
  * @n: number of numbers (args)
  *
  * Return: void
