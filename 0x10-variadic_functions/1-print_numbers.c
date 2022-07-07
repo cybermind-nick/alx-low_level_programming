@@ -10,14 +10,13 @@
  * Return: void
  */
 
-void print_numbers(const char *seperator, const unsigned int n)
+void print_numbers(const char *seperator, const unsigned int n, ...)
 {
+	va_list args;
 	unsigned int i;
 
 	if (n == 0)
 		return;
-
-	va_list args;
 
 	va_start(args, n);
 
