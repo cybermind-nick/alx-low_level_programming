@@ -24,15 +24,17 @@ void print_numbers(const char *seperator, const unsigned int n, ...)
 	{
 		for (i = 0; i < n; i++)
 		{
-			printf("%d\n", va_arg(args, int));
+			printf("%d", va_arg(args, int));
 		}
+		printf("\n");
 	}
 	else
 	{
 		for (i = 0; i < n; i++)
 		{
-			printf("%d\n", va_arg(args, int));
-			printf("%s\n", seperator);
+			printf("%d", va_arg(args, int));
+			printf("%s", seperator);
 		}
+		printf("\n");
 	}
 }
