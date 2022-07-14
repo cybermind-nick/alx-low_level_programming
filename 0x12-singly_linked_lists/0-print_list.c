@@ -36,16 +36,18 @@ size_t print_list(const list_t *h)
 		if (p->str == NULL)
 		{
 			_puts("(nil)");
+			_puts("\n");
 			count++;
 			p = p->next;
 		}
 		else
 		{
 			_puts(p->str);
+			_puts("\n");
 			count++;
 			p = p->next;
 		}
 	}
-
+	
 	return (count);
 }
