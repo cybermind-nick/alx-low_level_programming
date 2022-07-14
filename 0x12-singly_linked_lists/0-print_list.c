@@ -1,53 +1,25 @@
 #include "lists.h"
 
 /**
- * _puts - prints a string
- * @s: string
- *
- * Return: void
- */
-
-void _puts(char *s)
-{
-	while (*s != '\0')
-	{
-		_putchar(*s++);
-	}
-}
-
-/**
- * print_list - print out the contents of a linked list
- * h: the head of the list (pointer)
- *
- * Return: void
+ * print_list - prints all elements of list_t list
+ * @h: linked list
+ * Return: number of nodes in linked list
  */
 
 size_t print_list(const list_t *h)
 {
-	const list_t *p;
 	size_t count = 0;
 
-	if (h == NULL)
-		return (count);
-
-	p = h;
-	while (p != NULL)
+	while (h != NULL)
 	{
-		if (p->str == NULL)
-		{
-			_puts("(nil)");
-			_puts("\n");
-			count++;
-			p = p->next;
-		}
+		if (h->str == NULL)
+			printf("[0] (nil)\n");
 		else
-		{
-			_puts(p->str);
-			_puts("\n");
-			count++;
-			p = p->next;
-		}
+			printf("[%d] %s\n", h->len, h->str);
+
+		count++;
+		h = h->next;
 	}
-	
+
 	return (count);
 }
