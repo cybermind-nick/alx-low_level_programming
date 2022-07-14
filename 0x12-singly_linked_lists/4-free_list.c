@@ -16,7 +16,7 @@ void free_list(list_t *head)
 }
 
 /**
- * another way using temp pointer
+ * Alternative - another way using temp pointer
  *
  *      list_t *ptr;
  *
