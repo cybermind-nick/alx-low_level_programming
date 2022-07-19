@@ -10,6 +10,7 @@
 int pop_listint(listint_t **head)
 {
 	int val;
+	listint_t *popped_node;
 
 	if (head == NULL)
 		return (0);
@@ -18,7 +19,10 @@ int pop_listint(listint_t **head)
 		return (0);
 
 	val = (*head)->n;
-	head = &((*head)->next);
+	popped_node = *head;
+	*head = popped_node->next;
+	free(popped_node);
+	/* head = &((*head)->next); */
 
 	return (val);
 }
