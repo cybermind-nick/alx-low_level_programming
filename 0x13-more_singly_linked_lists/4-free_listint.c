@@ -13,7 +13,7 @@ void free_listint(listint_t *head)
 	listint_t *ptr; /* Use to free each individual allocated node */
 
 	if (head == NULL)
-		exit(98);
+		return;
 
 	while (head != NULL)
 	{
