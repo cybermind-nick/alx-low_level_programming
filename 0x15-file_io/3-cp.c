@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h> /* for dprintf */
 
 /**
  * _error - prints error messages and exits with exit value
@@ -52,7 +53,7 @@ int main(int argc, char *argv[])
 	if (fd_1 == -1)
 		_error(98, argv[1], 0);
 
-	/* read from source file to dest file in a loop just like in php-lang*/
+	/* read from source file to dest file in a loop */
 	while ((n_read = read(fd_1, buffer, 1024)) != 0)
 	{
 		if (n_read == -1)
