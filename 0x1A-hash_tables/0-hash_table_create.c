@@ -16,17 +16,17 @@ hash_table_t *hash_table_create(unsigned long int size)
 	unsigned long int i = 0;
 
 	if (size == 0)
-		return NULL;
+		return (NULL);
 
 	ht = malloc(sizeof(hash_table_t));
 	if (!ht)
-		return NULL;
+		return (NULL);
 
 	array = malloc(sizeof(*array) * size);
 	if (!array)
 	{
 		free(ht);
-		return NULL;
+		return (NULL);
 	}
 
 	while (i < size)
