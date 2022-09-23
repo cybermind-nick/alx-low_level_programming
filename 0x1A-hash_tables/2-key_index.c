@@ -4,7 +4,7 @@
  * key_index - gives the index of a key in a hash map
  * @key: string to get index
  * @size: size of the hash map
- * 
+ *
  * Return: the index where the key/value pair is stored in the hash map
  */
 
