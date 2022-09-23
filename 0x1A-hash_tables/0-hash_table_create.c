@@ -12,14 +12,31 @@
 hash_table_t *hash_table_create(unsigned long int size)
 {
 	hash_table_t *ht;
+	hash_table_t **array;
+	unsigned long int i = 0;
 
 	if (size == 0)
+		return NULL;
+
+	ht = malloc(sizeof(hash_table_t));
+	if (!ht)
+		return NULL;
+
+	array = malloc(sizeof(*hash_table_t));
+	if (!array)
 	{
+		free(ht);
 		return NULL;
 	}
 
-	ht = malloc(sizeof(hash_table_t));
+	while (i < size)
+	{
+		array[i] = NULL;
+		i++;
+	}
+
 	ht->size = size;
+	ht->array = array;
 
 	return (ht);
 }
